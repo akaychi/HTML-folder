@@ -1,0 +1,81 @@
+h1 {
+    background-color: aquamarine;
+    border: 1px solid black;
+    color: blue;
+    font-family: "Arial", sans-serif;
+    font-size: 2em;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}  
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+div {
+    background-color: aquamarine;
+    color: darkblue;
+    font-size: 24px;
+    text-align: center;
+}
+
+@media (max-width: 992px) {
+    div {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    div {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    div {
+        font-size: 16px;
+    }    
+}
+
+.nav__link {
+    color: black;
+}
+.nav__link--active {
+    color: red;
+    font-weight: bold;
+}
+
+#globe {
+    width: 400px;
+    height: 400px;
+    background: url('sphere.png') no-repeat;
+    animation: spin 10s linear infinite;
+    position: relative;
+}
+#name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
